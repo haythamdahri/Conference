@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>ConferenceManagement</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+
+
+
+  <servlet-mapping>
+  	<servlet-name>default</servlet-name>
+  	<url-pattern>/static/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>default</servlet-name>
+  	<url-pattern>/media/*</url-pattern>
+  </servlet-mapping>
+  
+   <context-param> 
+      <description>Location to store uploaded file</description> 
+      <param-name>APPDIR</param-name> 
+      <param-value>
+         /root/eclipse-workspace/ConferenceManagement/WebContent/
+      </param-value> 
+   </context-param>
+  
+  <context-param>
+  	<param-name>driver</param-name>
+  	<param-value>com.mysql.jdbc.Driver</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>url</param-name>
+  	<param-value>jdbc:mysql://localhost:3306/conference</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>db_user</param-name>
+  	<param-value>haytham</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>db_password</param-name>
+  	<param-value>toortoor</param-value>
+  </context-param>
+</web-app>
+
+
+
+
